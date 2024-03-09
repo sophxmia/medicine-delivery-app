@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Medicine Delivery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application allows users to order medicines for delivery from various drug stores.
+## Overview
 
-## Available Scripts
+The Medicine Delivery app offers three complexity levels: base, middle, and advanced.
+Description
 
-In the project directory, you can run:
+The Medicine Delivery app consists of two main pages:
 
-### `npm start`
+* Shops Page: Where users can choose a drug store and add medicines to their cart.
+* Shopping Cart Page: Where users can review their added products, modify quantities, add contact information, and submit their order.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Instructions: Detailed instructions on how to run the application are provided in this readme file.
+* Source Code: The source code is uploaded to GitHub. Find the link below.
+* Application Hosting: The application is hosted using Netlify. Access the URL provided below.
+* Frontend: Developed using JavaScript (React.js framework) with a customizable design style.
+* Backend: Implemented in NodeJS.
+* Database: Utilizes a relational or non-relational database (MySQL).
 
-### `npm test`
+## Base Level
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Drug Stores Page:
 
-### `npm run build`
+* Users can select a drug store and add medicines to their cart (data fetched from the database).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Shopping Cart Page:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Users can view all added products, remove items, adjust quantities, and provide contact details.
+* Orders are saved in the database upon submission.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Middle Level
 
-### `npm run eject`
+### Drug Stores Page:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Includes all features from the base level.
+* Ability to sort medicines by price and/or date added.
+* Users can mark medicines as favorites, which are prioritized in sorting.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Shopping Cart Page:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Retains cart items in local storage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Advanced Level
 
-## Learn More
+### Drug Stores Page:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Includes all features from the middle level.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Shopping Cart Page:
 
-### Code Splitting
+* Includes all features from the middle level.
+* Integration of Google Maps:
+  * Users can select their address via a map pin or manually enter it.
+  * Displays the selected shop on the map.
+  * (Extra) Provides route and estimated time from shop to user's address.
+  * (Extra) Implements a captcha for order creation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Additional Ideas
 
-### Analyzing the Bundle Size
+* Orders History Page: Users can track their orders using email, phone number, or order ID.
+* Coupons Page: Displays available coupons for discounts, which users can apply during checkout.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Run
 
-### Making a Progressive Web App
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies: npm install.
+4. Start the application: npm start.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## GitHub Repository
 
-### Advanced Configuration
+Link to GitHub Repository
+https://github.com/sophxmia/medicine-delivery-app 
+## Application URL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Link to hosted application on Netlify
+https://medicine-delivery-app-react.netlify.app/ 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore and contribute to the project! If you encounter any issues or have suggestions for improvement, please create a GitHub issue.
